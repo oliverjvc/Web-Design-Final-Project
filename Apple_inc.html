@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="mystylep.css">
+        <link rel="stylesheet" href="mystyle-homep.css">
+        <link rel="stylesheet" type="text/css" href="oliver.css">
+        <meta charset="utf-8">
+        <title> Apple </title>
+    </head>
+    <body>
+        <div class="navigacija">
+            
+            <a href="Apple_inc.html"><div>Apple Inc.</div></a>
+            <a href="History.html"><div>History</div></a>
+            <a href="Financial_figures.html"><div> Financial figures</div></a>
+            <a href="Contact_us.html"><div>Contact us</div></a>
+            <div class="dropdown">
+            <button class="dropbtn">Founders</button>
+            <div class="dropdown-content">
+                <a href="Steve_Jobs.html">Steve Jobs</a>
+                <a href="Steve_Wozniak.html">Steve Wozniak</a>
+                <a href="Ronald_Wayne.html">Ronald Wayne</a>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="home-content">
+
+            
+            <div>
+            <h1 class="naslov" style="text-align: center;">About Apple</h1>
+            <p style="margin: 0px 30px;"><a href="https://www.apple.com/" target="_blank">Apple Inc.</a> is an American multinational technology company that specializes in consumer electronics, software and online services. <b>Apple</b> is the largest information technology company by revenue (totaling <em>US$365.8 billion</em> in 2021) and, as of January 2021, <ins>it is the world's most valuable company</ins>, the fourth-largest personal computer vendor by unit sales and second-largest mobile phone manufacturer. It is one of the Big Five American information technology companies, alongside <b>Alphabet</b>, <b>Amazon</b>, <b>Meta</b>, and <b>Microsoft</b>.</p>
+
+            <p style="margin: 20px 30px;">Apple was founded as <b>Apple Computer Company</b> on April 1, 1976, by <b>Steve Jobs</b>, <b>Steve Wozniak</b> and <b>Ronald Wayne</b> to develop and sell Wozniak's <i>Apple I</i> personal computer. It was incorporated by <b>Jobs</b> and <b>Wozniak</b> as <b>Apple Computer</b>, Inc. in 1977 and the company's next computer, the <em>Apple II</em> became a best seller. Apple went public in 1980, to instant financial success. The company went onto develop new computers featuring innovative graphical user interfaces, including the original Macintosh, announced in a critically acclaimed advertisement, "<i>1984</i>", directed by <b>Ridley Scott</b>. By 1985, the high cost of its products and power struggles between executives caused problems. <b>Wozniak</b> stepped back from <b>Apple</b> amicably, while <b>Jobs</b> resigned to found <b>NeXT</b>, taking some <b>Apple</b> employees with him.</p>
+
+            <p style="margin: 20px 30px;">
+                <b>Apple</b> became the first publicly traded U.S. company to be valued at over <em>$1 trillion</em> in August 2018, then <em>$2 trillion</em> in August 2020, and most recently <em>$3 trillion</em> in January 2022. The company receives criticism regarding the labor practices of its contractors, its environmental practices, and its business ethics, including anti-competitive practices and materials sourcing. The company enjoys a high level of brand loyalty, and is ranked as <em>one of the world's most valuable brands.</em>
+            </p>
+            
+            <br><br>
+            
+            </div> 
+
+        </div>
+
+       <div class='krugovi'>
+        <div class="krug"></div>
+        </div>
+       
+        
+        <script>
+
+            const nasl = document.querySelector(".naslov");
+            const n = nasl.textContent;
+            const poluNaslov = n.split("");
+            nasl.textContent = "";
+            for(let i = 0; i < poluNaslov.length; i++){
+            nasl.innerHTML += "<span>" + poluNaslov[i] + "</span";
+            }
+
+            let char = 0;
+            let timer = setInterval(kucaj, 50);
+
+            function kucaj(){
+            const span = nasl.querySelectorAll('span')[char];
+            span.classList.add('fade');
+            char++;
+            if(char === poluNaslov.length){
+            gotov();
+            return;
+            }
+        }
+
+        function gotov(){
+        clearInterval(timer);
+        timer = null;
+        }
+
+        let kruznica = document.querySelector('.krugovi');
+
+        window.addEventListener('load', function () {
+        kruznica.parentElement.removeChild(kruznica);
+        });
+
+        
+        </script>
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+    </body>
+</html>

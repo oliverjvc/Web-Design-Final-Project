@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="mystylep.css">
+        <meta charset="utf-8">
+        <title> Founders </title>
+    </head>
+    <body>
+        <div class="navigacija">
+            <a href="Apple_inc.html"><div>Apple Inc.</div></a>
+            <a href="History.html"><div>History</div></a>
+            <a href="Financial_figures.html"><div> Financial figures</div></a>
+            <a href="Contact_us.html"><div>Contact us</div></a>
+            <div class="dropdown">
+            <button class="dropbtn">Founders</button>
+            <div class="dropdown-content">
+                <a href="Steve_Jobs.html">Steve Jobs</a>
+                <a href="Steve_Wozniak.html">Steve Wozniak</a>
+                <a href="Ronald_Wayne.html">Ronald Wayne</a>
+              </div>
+            </div>
+        </div>
+    
+        <div class="kontent">
+            <style>
+                div.item {
+                    vertical-align: top;
+                    display: inline-block;
+                    text-align: center;
+                    width: 120px;
+                    margin: 2px;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                    background-color: grey;
+                }
+                .caption {
+                    display: block;
+                }
+                h1 .pr #pri{
+                    color: rgb(255, 255, 255);
+                }
+            
+            </style>
+        <div class="imageh">
+            <div class="item">
+                <img src="Slike/ronald.jpg" title="Ronald" alt="Apple" width="200px" height="200px"/>
+                <span class="caption">Ronald Wayne</span>
+            </div>
+        </div>
+        <div class="tekst">
+        <div class="pr">
+        <h1 id="pri">Ronald Wayne</h1>
+        </div>
+        <p>
+            Ronald Gerald Wayne (born May 17, 1934) is a retired American electronics industry businessman. He co-founded Apple Computer Company (now Apple Inc.) as a partnership with Steve Wozniak and Steve Jobs on April 1, 1976, providing administrative oversight and documentation for the new venture. Twelve days later, he sold his 10% share of the new company back to Jobs and Wozniak for US$800 (equivalent to $3,810 in 2021), and one year later accepted a final US$1,500 (equivalent to $7,143 in 2021) to forfeit any potential future claims against the newly incorporated Apple.
+        </p>
+
+        <p>
+            In 1976, Ronald Wayne built the internal corporate documentation systems at the three-year-old Atari, when he met coworkers Steve Jobs and Steve Wozniak. To help settle one of their typical intense discussions about the design of computers and the future of the industry, Wayne invited the two to his home to facilitate and advise them. In the ensuing two-hour conversation about technology and business, Jobs proposed the founding of a computer company led by him and Wozniak. Those two would each hold a 45% stake so that Wayne could receive a 10% stake to act as a tie-breaker in their decisions. As the venture's self-described "adult in the room" at age 41, Wayne wrote a partnership agreement, and the three founded Apple Computer on April 1, 1976. Wayne illustrated the first Apple logo and wrote the Apple I manual.
+        </p>
+        <p>
+            Wayne's business attitude was already risk-averse due to his experience five years prior with the "very traumatic" failure of his slot machine business, the debt of which he had spent one year voluntarily repaying. Jobs secured a US$15,000 line of credit to buy product materials for Apple's first order which had been placed by The Byte Shop whose reputation as a notoriously slow-paying vendor gave Wayne great concern for his future. Legally, all members of a partnership are personally responsible for any debts incurred by any partner; unlike Jobs and Wozniak, then 21 and 25, Wayne had personal assets that potential creditors could possibly seize. Furthermore, his passion was in original product engineering and in slot machines, and not in the documentation systems he assumed Jobs and Wozniak probably wanted him to do indefinitely at Apple. Believing he was "standing in the shadow of giants" of product-design talent and avoiding financial risk, he quit the company. Reportedly, "Twelve days after Wayne wrote the document that formally created Apple, he returned to the registrar's office and renounced his role in the company", therefore relinquishing his equity in exchange for US$800 on April 12, 1976. This period of time however has been disputed by Steve Wozniak, who in an interview said that Wayne left the company after a few months.
+        </p>
+        </div>
+        </div>
+    </body>
+
+    <div class='krugovi'>
+        <div class="krug"></div>
+        </div>
+
+        <script>
+        let kruznica = document.querySelector('.krugovi');
+
+        window.addEventListener('load', function () {
+        // krugovi.style.display = 'none';
+        kruznica.parentElement.removeChild(kruznica);
+        });
+        </script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="mystylep.css">
+        <meta charset="utf-8">
+        <title> Founders </title>
+    </head>
+    <body>
+        <div class="navigacija">
+            <a href="Apple_inc.html"><div>Apple Inc.</div></a>
+            <a href="History.html"><div>History</div></a>
+            <a href="Financial_figures.html"><div> Financial figures</div></a>
+            <a href="Contact_us.html"><div>Contact us</div></a>
+            <div class="dropdown">
+            <button class="dropbtn">Founders</button>
+            <div class="dropdown-content">
+                <a href="Steve_Jobs.html">Steve Jobs</a>
+                <a href="Steve_Wozniak.html">Steve Wozniak</a>
+                <a href="Ronald_Wayne.html">Ronald Wayne</a>
+              </div>
+            </div>
+        </div>
+    
+        <div class="kontent">
+            <style>
+                div.item {
+                    vertical-align: top;
+                    display: inline-block;
+                    text-align: center;
+                    width: 120px;
+                    margin: 1px;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                    background-color: grey;
+                }
+                .caption {
+                    display: block;
+                }
+                h1, .prp, #prpi{
+                    color: rgb(255, 255, 255);
+                }
+            </style>
+        <div class="imageh">
+            <div class="item">
+                <img src="Slike/Stevo.jpg" title="Stevo" alt="Apple"  width="200px" height="200px"/>
+                <span class="caption">Steve Jobs</span>
+            </div>
+        </div>
+        <div class="prp">
+        <h1 id="prpp">Steve Jobs</h1>
+        </div>
+        <div class="tekst">
+        <p>
+            Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American business magnate, industrial designer, media proprietor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. He is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.
+        </p>
+        
+        <p>
+            Born in San Francisco to a Muslim Syrian father and a Catholic German-American mother, Jobs was adopted shortly after his birth. Jobs attended Reed College in 1972 before withdrawing that same year, and traveled through India in 1974 seeking enlightenment and studying Zen Buddhism. He and Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. Together, the duo gained fame and wealth a year later with the Apple II, one of the first highly successful mass-produced microcomputers. Jobs saw the commercial potential of the Xerox Alto in 1979, which was mouse-driven and had a graphical user interface (GUI). This led to the development of the unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984, the first mass-produced computer with a GUI. The Macintosh introduced the desktop publishing industry in 1985 with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics.
+        </p>
+
+        <p>
+            Jobs was forced out of Apple in 1985 after a long power struggle with the company's board and its then-CEO John Sculley. That same year, Jobs took a few Apple employees with him to found NeXT, a computer platform development company that specialized in computers for higher-education and business markets. In addition, he helped to develop the visual effects industry when he funded the computer graphics division of George Lucas's Lucasfilm in 1986. The new company was Pixar, which produced the first 3D computer animated feature film Toy Story (1995) and went on to become a major animation studio, producing over 20 films since.
+        </p>
+        </div>
+        </div>
+    </body>
+
+    <div class='krugovi'>
+        <div class="krug"></div>
+        </div>
+
+        <script>
+        let kruznica = document.querySelector('.krugovi');
+
+        window.addEventListener('load', function () {
+        // krugovi.style.display = 'none';
+        kruznica.parentElement.removeChild(kruznica);
+        });
+        </script>
+</html>

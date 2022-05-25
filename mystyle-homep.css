@@ -1,0 +1,26 @@
+.home-content{
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.home-content div{
+    color: rgb(238, 235, 226);
+    font-size: 4mm;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align:justify;
+    display: inline-block;
+    top: 20%;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    position: absolute;
+}
+body{
+    background-color: black;
+}
+

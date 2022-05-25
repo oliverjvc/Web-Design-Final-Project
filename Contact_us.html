@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystylep.css">
+        <meta charset="utf-8">
+        <title> Contact us </title>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body onload="initialize()">
+
+        <div class="navigacija">
+
+            <a href="Apple_inc.html"><div>Apple Inc.</div></a>
+            <a href="History.html"><div>History</div></a>
+            <a href="Financial_figures.html"><div> Financial figures</div></a>
+            <a href="Contact_us.html"><div>Contact us</div></a>
+            <div class="dropdown">
+            <button class="dropbtn">Founders</button>
+            <div class="dropdown-content">
+                <a href="Steve_Jobs.html">Steve Jobs</a>
+                <a href="Steve_Wozniak.html">Steve Wozniak</a>
+                <a href="Ronald_Wayne.html">Ronald Wayne</a>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="kontent">
+            <h1>Form</h1>
+            <button onmouseover="this.style.backgroundColor='#CCCCCC';return true;" onmouseout="this.style.backgroundColor='white'" class="dugme1" onclick="otvori()">Open</button>
+            <form id='form' style="display: none;">
+                <fieldset> 
+                    <legend>Your impression of website</legend>
+                    <p> How much did you like the content of this site? <input type="text" name="svidja" id="id2" required></p>
+                    </select> </p>
+                    <p>Would you recommend this webiste to a friend? <input type="text" name="preporuka" id="id3" required></p>
+                    </select> </p>
+                    <p>How would you rate this website from 1 to 10? <input id="id1" type="number" min="1" max="10" required></p>
+                    <p id="demo"></p>
+                    <button onclick="myFunction()">OK</button>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Your Personal information</legend>
+                    <p> Gender: <input type="text" name="pol" id="id4" required></p> 
+                    <p> Birthday: <input type="date" id="id5"></p>
+                    <button onclick="myFunction()">OK</button>
+                </fieldset>
+                
+                <br>
+                <fieldset>
+                    <legend>Any suggestion</legend>
+                    <p>The purpose of contacting:</p> 
+                    <p> <input type="checkbox"> I have a problem with webiste </p>
+                    <p> <input type="checkbox"> I have a suggestion </p>
+                    <p> <input type="checkbox"> I want to comment this website </p>
+                    
+                    <p> What background color is most suitable for this website? <input type="color" name="color" value="white"></p>
+
+                    <p>Comment</p>
+                    <textarea name="komentari" rows="10" cols="100" placeholder="enter your text here"></textarea>
+                </fieldset>
+            </form>
+        </div>
+        
+        <h2>Input a phone number</h2> 
+        <form name="forma2" action="#">
+            <input type='number' placeholder="Input phone number" name='text2' required />
+            <input onmouseover="this.style.backgroundColor='#CCCCCC';return true;" onmouseout="this.style.backgroundColor='white'" class="dugme1" type="submit" name="submit" value="Submit" onclick="brojTelefona(document.forma2.text2)"/>
+        </form>
+        
+        <label>
+            <h2> Password : </h2>
+            <div>
+                <input type="password" placeholder="Input password" id="sifra" name="sifra">
+            </div>
+        </label>
+        <input onmouseover="this.style.backgroundColor='#CCCCCC';return true;" onmouseout="this.style.backgroundColor='white'" class="dugme1" type="button" value="Submit" id="submit" onClick="validacijaSifre()">
+            <div id="greska1"></div>
+            <div id="greska2"></div>
+            <div id="greska3"></div>
+            <div id="greska4"></div>
+            <div id="greska5"></div>
+        
+        <h2>Enter your email</h2>
+        <input id="email" placeholder="Input email" type="text"/>
+
+        <button onmouseover="this.style.backgroundColor='#CCCCCC';return true;" onmouseout="this.style.backgroundColor='white'" class="dugme1" id="testEmail" onClick="proveriEmail(document.getElementById('email').value)">Check Email</button>
+
+        <script>
+        
+        let kruznica = document.querySelector('.krugovi');
+
+        window.addEventListener('load', function () {
+        kruznica.parentElement.removeChild(kruznica);
+        });
+        </script>
+    </body>
+</html>

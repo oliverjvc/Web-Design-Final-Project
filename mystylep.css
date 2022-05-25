@@ -1,0 +1,192 @@
+.navigacija{
+    background-image: url(../Projekat2/Slike/eplp1.jpg);
+    background-color: black;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.8; 
+    color: rgb(238, 235, 226);
+    position: fixed;
+    height: 20%;
+	white-space: nowrap;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+.navigacija a div{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px, 1px;
+    background-color: rgba(138, 132, 145, 0);
+    color: white;
+    min-width: 100px;
+    text-align: center;    
+}
+.navigacija a:hover div{
+    background-color: rgb(238, 235, 226);
+    color: rgb(12, 12, 12);
+}
+.kontent{
+    top: 50px;
+    margin-top: 14%;
+}
+.content{
+    position: relative;
+    top: 0px;
+    margin-right: 25px;
+    width: 45%;
+    text-align: justify;
+}
+.myheader{
+    top: 240px;
+}
+.content {
+    position: fixed;
+	width:45%;
+	text-align:justify;
+}
+
+table{
+    color: rgb(249, 253, 238);
+    text-align: center;
+    margin-left: 15%;
+    background-color: black;
+}
+body{
+    background-image: url(../Projekat2/Slike/dark-minimal-mountains-at-night_.jpg);
+    background-position: center;
+    background-size: cover
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+.imageh{
+    float: right;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tekst{
+    text-align:left;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Corben, Georgia, Times, serif;
+}
+p, div {
+    font-family: Nobile, Helvetica, Arial, sans-serif;
+}
+
+
+.navigacijaf a div{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px, 1px;
+    background-color: rgba(138, 132, 145, 5);
+    color: white;
+    min-width: 100px;
+    text-align: center;
+}
+.navigacijaf a:hover div{
+    background-color: rgb(238, 235, 226);
+    color: rgb(12, 12, 12);
+}
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#primer{
+    color:rgb(238, 235, 226);
+}
+
+.krugovi{
+    height: 100%;
+    width: 100%;
+    background-color: #151515;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.krug {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.krug::before,
+.krug:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.krug:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #ff3333 0%,#262673 100%);
+    animation-name: spinovanje;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.krug:after {
+    width: 90%;
+    height: 90%;
+    background-color: #151515;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spinovanje {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dugme1{
+    margin-top: 2px;
+    padding: 5px;
+    background-color: #e7e7e7;
+    color: black;
+    border-radius: 8px;
+}
